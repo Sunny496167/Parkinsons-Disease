@@ -8,9 +8,9 @@ const HomePage = () => {
     const [selectedModel, setSelectedModel] = useState(null);
 
     const models = [
-        { id: 'drawing', name: 'Drawing Test', icon: FileText, description: 'Symptom-based drawing assessment', color: 'from-green-500 to-teal-500', type: 'questionnaire' },
-        { id: 'audio', name: 'Voice Analysis', icon: Mic, description: 'Symptom-based voice assessment', color: 'from-orange-500 to-red-500', type: 'questionnaire' },
-        { id: 'symptoms', name: 'Symptom Assessment', icon: Activity, description: 'Comprehensive symptom questionnaire', color: 'from-purple-500 to-indigo-500', type: 'questionnaire' }
+        { id: 'drawing', name: 'Drawing Test', icon: FileText, description: 'Spiral or wave drawing assessment', color: 'from-green-500 to-teal-500', type: 'drawing' },
+        { id: 'audio', name: 'Voice Analysis', icon: Mic, description: 'Voice upload or record assessment', color: 'from-orange-500 to-red-500', type: 'audio' },
+        { id: 'symptoms', name: 'Symptom Assessment', icon: Activity, description: 'Comprehensive symptom questionnaire', color: 'from-purple-500 to-indigo-500', type: 'symptoms' }
     ];
 
     const selectedModelData = models.find(m => m.id === selectedModel);
